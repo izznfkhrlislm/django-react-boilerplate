@@ -146,5 +146,10 @@ __pycache__/
 webpack-stats.dev.json
 webpack-stats.prod.json
 
+#build files
+build/
+bundles/
+assets/
+
 
 # End of https://www.gitignore.io/api/venv,virtualenv,pycharm+all,pycharm+iml
