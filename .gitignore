@@ -142,5 +142,9 @@ db.sqlite3
 #PYCache
 __pycache__/
 
+#webpack stats json
+webpack-stats.dev.json
+webpack-stats.prod.json
+
 
 # End of https://www.gitignore.io/api/venv,virtualenv,pycharm+all,pycharm+iml
