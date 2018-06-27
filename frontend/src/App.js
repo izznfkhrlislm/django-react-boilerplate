@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Route,
+  Switch,
+  BrowserRouter
+} from 'react-router-dom';
+import App1 from './components/App1';
+import NotFound from './components/NotFound';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to ReactJS and Django Boilerplate</h1>
-        </header>
-        <p className="App-intro">
-          A react app with django as a backend.
-        </p>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/west" component={App1} />
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
