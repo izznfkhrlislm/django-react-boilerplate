@@ -12,7 +12,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
+          //Change path to route that you want to use
           <Route exact path="/west" component={App1} />
+          //Default route path (handling error 404)
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
